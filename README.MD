@@ -30,10 +30,10 @@
 | Java JDK  | 17.0.8.1+1 | Обязательная версия для SDK |
 | Maven     | 3.9.8 | Управление зависимостями и сборкой |
 | Git       | GitHub Desktop или Portable Git | Система контроля версий |
-| Node.js   | 16.20.1 | Frontend-сборка |
-| Yarn      | 1.22.19 | Пакетный менеджер |
+| Node.js   | 20.15.1 | Frontend-сборка |
+| Yarn      | 1.22.22 | Пакетный менеджер |
 | Grunt CLI | 1.3.2 | Сборка UI-компонентов |
-| RX_SDK_HOME | com.bmc.arsys.rx.sdk-23.3.02 | Переменная окружения для SDK |
+| RX_SDK_HOME | com.bmc.arsys.rx.sdk-25.2.00 | Переменная окружения для SDK |
 
 ---
 
@@ -85,7 +85,7 @@
   ```
 ---
 
-### 4. Установите Node.js 16.20.1
+### 4. Установите Node.js 20.15.1
 
 Проверьте текущую версию:
 ```bash
@@ -94,21 +94,21 @@ node --version
 
 Если ниже — удалите и установите через **nvm**:
 ```bash
-nvm install 16.20.1
-nvm use 16.20.1
+nvm install 20.15.1
+nvm use 20.15.1
 ```
 
 ---
 
-### 5. Установите Yarn 1.22.19
+### 5. Установите Yarn 1.22.22
 
 ```bash
-npm install -g yarn@1.22.19
+npm install -g yarn@1.22.22
 ```
 
 Проверьте:
 ```bash
-yarn --version   # должно быть 1.22.19
+yarn --version   # должно быть 1.22.22
 ```
 
 ---
@@ -128,12 +128,12 @@ C:\Users\<User>\AppData\Roaming\npm
 
 ### 7. Установите BMC Helix Innovation Studio SDK
 
-1. Скачайте архив **SDK 23.3.02**
+1. Скачайте архив **SDK 25.2.00**
 2. Распакуйте, например в `C:\sdk`
-3. Создайте переменную окружения `RX_SDK_HOME` → каталог SDK (`com.bmc.arsys.rx.sdk-23.3.02`)
+3. Создайте переменную окружения `RX_SDK_HOME` → каталог SDK (`com.bmc.arsys.rx.sdk-25.2.00`)
 4. Соберите зависимости:
    ```bash
-   cd C:\sdk\com.bmc.arsys.rx.sdk-23.3.02\lib
+   cd C:\sdk\com.bmc.arsys.rx.sdk-25.2.00\lib
    mvn clean install
    ```
 
@@ -146,10 +146,10 @@ C:\Users\<User>\AppData\Roaming\npm
 |---------|----------------------|----------|
 | `java -version` | `openjdk 17.0.8.1+1` | `JAVA_HOME`, `PATH` указывают на JDK 17 |
 | `mvn -version`  | `Maven 3.9.8` + Java 17 | `MAVEN_OPTS` и `PATH` настроены |
-| `node --version` | `v16.20.1` | При необходимости переключение через nvm |
-| `yarn --version` | `1.22.19` | Путь к Yarn в `PATH` |
+| `node --version` | `v20.15.1` | При необходимости переключение через nvm |
+| `yarn --version` | `1.22.22` | Путь к Yarn в `PATH` |
 | `grunt --version` | `1.3.2` | Папка NPM в `PATH` |
-| `echo %RX_SDK_HOME%` | путь к SDK | Указывает на `com.bmc.arsys.rx.sdk-23.3.02` |
+| `echo %RX_SDK_HOME%` | путь к SDK | Указывает на `com.bmc.arsys.rx.sdk-25.2.00` |
 
 ---
 
