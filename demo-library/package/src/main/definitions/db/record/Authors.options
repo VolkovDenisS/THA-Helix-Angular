@@ -1,0 +1,6 @@
+#
+#Tue Apr 07 18:25:30 UTC 2026
+IgnoreRuleExecution=false
+DuplicateDataActionType=MERGE
+Name=com.example.demo-library\:Authors
+ImportOrder=1
