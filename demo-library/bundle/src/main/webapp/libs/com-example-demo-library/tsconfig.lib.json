@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/lib",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "types": [],
+    "resolveJsonModule": true,
+    "noImplicitOverride": false,
+    "target": "ES2022",
+    "module": "ES2022",
+    "importHelpers": true,
+    "lib": [
+      "ES2022",
+      "dom"
+    ]
+  },
+  "exclude": [
+    "**/*.spec.ts"
+  ],
+  "include": [
+    "**/*.ts"
+  ]
+}

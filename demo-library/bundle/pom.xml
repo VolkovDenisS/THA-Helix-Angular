@@ -272,6 +272,7 @@
                                     <directory>${basedir}/src/main/webapp/dist/apps/shell</directory>
                                     <includes>
                                         <include>*${project.artifactId}*</include>
+                                        <include>*config_public-path*</include>
                                     </includes>
                                 </resource>
                             </resources>

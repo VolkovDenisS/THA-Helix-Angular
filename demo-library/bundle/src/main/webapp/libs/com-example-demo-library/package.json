@@ -1,0 +1,12 @@
+{
+  "name": "@com.example.demo-library/com-example-demo-library",
+  "version": "1.0.0",
+  "dependencies": {
+    "tslib": "2.8.1"
+  },
+  "sideEffects": false,
+  "private": true,
+  "workspaces": {
+    "nohoist": []
+  }
+}

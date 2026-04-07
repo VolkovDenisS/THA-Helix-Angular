@@ -1,3 +1,2 @@
-const execSync = require('child_process').execSync;
-
-execSync('schematics @helix/schematics:workspace', { stdio: 'inherit' });
+const { spawnSync } = require('child_process');
+spawnSync('npx schematics', ['@helix/schematics:workspace'], { stdio: 'inherit', shell: true, encoding: 'utf-8' });
