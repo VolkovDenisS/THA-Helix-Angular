@@ -5,6 +5,7 @@
       {
         context: (path,req) => path.includes('/api') || path.includes('/scripts'),
         target: `http://${apiHost}:8008`,
+        secure: false
       }
     ];
     

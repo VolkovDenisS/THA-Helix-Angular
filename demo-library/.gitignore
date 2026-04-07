@@ -27,3 +27,6 @@ automation/test-output/
 ui-automation/AutoLog/
 ui-automation/jgiven-reports/
 ui-automation/test-output/
+
+*.iml
+bundle/src/main/webapp/.nx/

@@ -1,0 +1,50 @@
+begin schema data
+   name           : com.example.demo-library:Books
+   data-mapping   : <?xml version="1.0" encoding="utf-8"?><arDocMapping xmlns="urn:remedy:schemas:ars" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0"> 
+   data-mapping   :    <element name="entryList">        <formMapping>            <form foreignKeyId="1" formName="com.example.demo-library:Books" mapType="embedded" prima
+   data-mapping   : ryKeyId="1"/>            <element name="entryItem">                <element dataType="string" name="f1_Display_ID">                    <fieldMapping a
+   data-mapping   : rFieldId="1"/>                </element>                <element dataType="string" name="f2_Created_By">                    <fieldMapping arFieldId="2
+   data-mapping   : "/>                </element>                <element dataType="dateTime" name="f3_Created_Date">                    <fieldMapping arFieldId="3"/>   
+   data-mapping   :              </element>                <element dataType="string" name="f4_Assignee">                    <fieldMapping arFieldId="4"/>                
+   data-mapping   : </element>                <element dataType="string" name="f5_Modified_By">                    <fieldMapping arFieldId="5"/>                </element>
+   data-mapping   :                 <element dataType="dateTime" name="f6_Modified_Date">                    <fieldMapping arFieldId="6"/>                </element>     
+   data-mapping   :            <element dataType="string" name="f7_Status">                    <fieldMapping arFieldId="7"/>                </element>                <ele
+   data-mapping   : ment dataType="string" name="f8_Description">                    <fieldMapping arFieldId="8"/>                </element>                <element dataT
+   data-mapping   : ype="string" name="f15_Status_History">                    <fieldMapping arFieldId="15"/>                </element>                <element dataType="
+   data-mapping   : string" name="f16_Notifier_Listening">                    <fieldMapping arFieldId="16"/>                </element>                <element dataType="s
+   data-mapping   : tring" name="f37__ID">                    <fieldMapping arFieldId="379"/>                </element>                <element dataType="string" name="f5
+   data-mapping   : 36870_13_Author">                    <fieldMapping arFieldId="536870913"/>                </element>                <element dataType="string" name="f
+   data-mapping   : 536870_14_Book_Name">                    <fieldMapping arFieldId="536870914"/>                </element>                <element dataType="string" nam
+   data-mapping   : e="f536870_15_Book_Description">                    <fieldMapping arFieldId="536870915"/>                </element>                <element dataType="
+   data-mapping   : int" name="f536870_16_Book_Price">                    <fieldMapping arFieldId="536870916"/>                </element>                <element dataType
+   data-mapping   : ="string" name="f536870_17_Publisher">                    <fieldMapping arFieldId="536870917"/>                </element>            </element>      
+   data-mapping   :   </formMapping>    </element></arDocMapping>
+   data           : <?xml version="1.0" encoding="utf-8"?><entryList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">    
+   data           : <entryItem>        <f1_Display_ID>000000000000001</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2026-04-07T17:58:
+   data           : 26+00:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2026-04-07T18:03
+   data           : :40+00:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>Demo</f8_Description>        <f15_Status_History xsi:nil="true"/
+   data           : >        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGGYOTMJNX9PAT3EXX4T3EXX476CR</f37__ID>        <f536870_13_Au
+   data           : thor>000000000000001</f536870_13_Author>        <f536870_14_Book_Name>Echoes of Yesterday</f536870_14_Book_Name>        <f536870_15_Book_Description>Me
+   data           : mories that shape a lifetime.</f536870_15_Book_Description>        <f536870_16_Book_Price>12</f536870_16_Book_Price>        <f536870_17_Publisher>00000
+   data           : 0000000004</f536870_17_Publisher>    </entryItem>    <entryItem>        <f1_Display_ID>000000000000002</f1_Display_ID>        <f2_Created_By>Demo</f2
+   data           : _Created_By>        <f3_Created_Date>2026-04-07T17:59:04+00:00</f3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_
+   data           : Modified_By>        <f6_Modified_Date>2026-04-07T18:03:53+00:00</f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>Demo</f8_D
+   data           : escription>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGGYOTM
+   data           : JNX9PAT3EXY6T3EXY676HA</f37__ID>        <f536870_13_Author>000000000000001</f536870_13_Author>        <f536870_14_Book_Name>Threads of Fate</f536870_14
+   data           : _Book_Name>        <f536870_15_Book_Description>How lives weave and tangle together.</f536870_15_Book_Description>        <f536870_16_Book_Price>14</f5
+   data           : 36870_16_Book_Price>        <f536870_17_Publisher>000000000000001</f536870_17_Publisher>    </entryItem>    <entryItem>        <f1_Display_ID>0000000
+   data           : 00000003</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2026-04-07T17:59:31+00:00</f3_Created_Date>        <f4_Ass
+   data           : ignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2026-04-07T18:03:45+00:00</f6_Modified_Date>        <f7_S
+   data           : tatus>New</f7_Status>        <f8_Description>Demo</f8_Description>        <f15_Status_History xsi:nil="true"/>        <f16_Notifier_Listening>Not List
+   data           : ening</f16_Notifier_Listening>        <f37__ID>AGGGYOTMJNX9PAT3EXZHT3EXZH76JY</f37__ID>        <f536870_13_Author>000000000000001</f536870_13_Author> 
+   data           :        <f536870_14_Book_Name>my life</f536870_14_Book_Name>        <f536870_15_Book_Description>describes my life</f536870_15_Book_Description>        
+   data           : <f536870_16_Book_Price>1337</f536870_16_Book_Price>        <f536870_17_Publisher>000000000000004</f536870_17_Publisher>    </entryItem>    <entryItem>
+   data           :         <f1_Display_ID>000000000000004</f1_Display_ID>        <f2_Created_By>Demo</f2_Created_By>        <f3_Created_Date>2026-04-07T18:00:06+00:00</f
+   data           : 3_Created_Date>        <f4_Assignee xsi:nil="true"/>        <f5_Modified_By>Demo</f5_Modified_By>        <f6_Modified_Date>2026-04-07T18:04:04+00:00</
+   data           : f6_Modified_Date>        <f7_Status>New</f7_Status>        <f8_Description>Demo</f8_Description>        <f15_Status_History xsi:nil="true"/>        <
+   data           : f16_Notifier_Listening>Not Listening</f16_Notifier_Listening>        <f37__ID>AGGGYOTMJNX9PAT3EYAGT3EYAG7651</f37__ID>        <f536870_13_Author>000000
+   data           : 000000002</f536870_13_Author>        <f536870_14_Book_Name>Beyond the Veil</f536870_14_Book_Name>        <f536870_15_Book_Description>A door to a world
+   data           :  unseen.</f536870_15_Book_Description>        <f536870_16_Book_Price>17</f536870_16_Book_Price>        <f536870_17_Publisher>000000000000003</f536870_1
+   data           : 7_Publisher>    </entryItem></entryList>
+end
+

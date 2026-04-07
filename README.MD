@@ -176,7 +176,7 @@ git clone https://github.com/VolkovDenisS/THA-Helix-Angular.git
 Проверить корректность конфигурации можно выполнив команду из папки проекта:
 
 ```bash
-mvn clean install -Pdeploy -Pexport -X
+mvn clean install -Pdeploy
 ```
 
 Ожидаемым результатом является успешный деплой.

@@ -371,7 +371,7 @@
                     <instructions>
                         <Bundle-Name>${rx-sdk.bundleName}</Bundle-Name>
                         <Bundle-SymbolicName>${rx-sdk.bundleId}</Bundle-SymbolicName>
-                        <Bundle-Activator>com.example.bundle.MyApplication</Bundle-Activator>
+                        <Bundle-Activator>com.example.demolibrary.DemoLibraryApplication</Bundle-Activator>
                         <Bundle-Display-Version>${rx-sdk.bundleDisplayVersion}</Bundle-Display-Version>
                         <Import-Package>com.bmc.arsys*;version=!,
                         org.hibernate.validator.constraints*;version=!,
