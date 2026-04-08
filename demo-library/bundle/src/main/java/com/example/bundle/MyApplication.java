@@ -8,7 +8,6 @@
 package com.example.bundle;
 
 import com.bmc.arsys.rx.services.common.RxBundle;
-import com.bmc.arsys.rx.services.common.domain.WebResourceDefinition;
 
 /**
  * Rx Web Activator class.
@@ -20,11 +19,7 @@ public class MyApplication extends RxBundle {
      */
     @Override
     protected void register() {
-        //
-        // TODO: Register static web resources and framework extensions.
-        //
-        // registerService(new MyService());
-        //
+        registerService(new BooksActivity());
 
         registerStaticWebResource(String.format("/%s", getId()), "/webapp");
     }
