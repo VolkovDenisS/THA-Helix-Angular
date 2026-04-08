@@ -20,6 +20,7 @@ public class MyApplication extends RxBundle {
     @Override
     protected void register() {
         registerService(new BooksActivity());
+//        registerClass(BooksDataPageQuery.class);
 
         registerStaticWebResource(String.format("/%s", getId()), "/webapp");
     }
