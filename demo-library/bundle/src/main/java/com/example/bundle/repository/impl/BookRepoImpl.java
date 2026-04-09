@@ -3,6 +3,7 @@ package com.example.bundle.repository.impl;
 import com.bmc.arsys.rx.services.common.DataPage;
 import com.bmc.arsys.rx.services.common.DataPageQueryParameters;
 import com.bmc.arsys.rx.services.common.QueryPredicate;
+import com.bmc.arsys.rx.services.common.SortByValue;
 import com.bmc.arsys.rx.services.common.annotation.RxInstanceTransactional;
 import com.bmc.arsys.rx.services.record.RecordService;
 import com.example.bundle.domain.Book;
@@ -52,9 +53,9 @@ public class BookRepoImpl implements BookRepo {
                 new QueryPredicate(RecordService.RECORD_DEFINITION_QUERY_PARAMETER_NAME, BOOKS_RECORD_DEFINITION_NAME));
         queryPredicates.put(String.valueOf(BOOKS_AUTHOR_FIELD_ID),
                 new QueryPredicate(String.valueOf(BOOKS_AUTHOR_FIELD_ID), authorId));
-
+        SortByValue sortByValue = new SortByValue(String.valueOf(BOOKS_PRICE_FIELD_ID), false);
         return new DataPageQueryParameters(PAGE_SIZE_FIND_TOP, PAGE_START_INDEX_FIRST_PAGE,
-                getPropertySelections(), null, queryPredicates);
+                getPropertySelections(), List.of(sortByValue), queryPredicates);
     }
 
     private static List<String> getPropertySelections() {
