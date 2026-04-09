@@ -8,7 +8,7 @@ import com.bmc.arsys.rx.services.record.RecordService;
 import com.bmc.arsys.rx.services.record.domain.RecordInstance;
 import com.example.bundle.domain.Book;
 import com.example.bundle.mapper.EntityMapperFactory;
-import com.example.bundle.repository.BooksRepo;
+import com.example.bundle.repository.BookRepo;
 import org.springframework.transaction.annotation.Isolation;
 
 import java.util.*;
@@ -21,12 +21,12 @@ import static com.example.bundle.constant.Constants.BOOKS_RECORD_DEFINITION_NAME
  * @author Created by ZotovES on 09.04.2026
  * Репозиторий книг
  */
-public class BooksRepoImpl implements BooksRepo {
+public class BookRepoImpl implements BookRepo {
     private static final int PAGE_SIZE_FIND_TOP = 2; //Кол-во элементов в списке топа книг по ТЗ
     private static final int PAGE_START_INDEX_FIRST_PAGE = 0;
     private final RecordService recordService;
 
-    public BooksRepoImpl(RecordService recordService) {
+    public BookRepoImpl(RecordService recordService) {
         this.recordService = recordService;
     }
 

@@ -8,7 +8,7 @@ import java.util.List;
  * @author Created by ZotovES on 09.04.2026
  * Репозиторий книг
  */
-public interface BooksRepo {
+public interface BookRepo {
     /**
      * Поиск списка с топом книг по ид автора
      *

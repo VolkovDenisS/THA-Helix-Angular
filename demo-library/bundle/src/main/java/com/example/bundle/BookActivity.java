@@ -8,10 +8,10 @@ import com.bmc.arsys.rx.services.common.domain.Scope;
 import com.bmc.arsys.rx.services.record.RecordService;
 import com.example.bundle.domain.Author;
 import com.example.bundle.domain.Book;
-import com.example.bundle.repository.AuthorsRepo;
-import com.example.bundle.repository.BooksRepo;
-import com.example.bundle.repository.impl.AuthorsRepoImpl;
-import com.example.bundle.repository.impl.BooksRepoImpl;
+import com.example.bundle.repository.AuthorRepo;
+import com.example.bundle.repository.BookRepo;
+import com.example.bundle.repository.impl.AuthorRepoImpl;
+import com.example.bundle.repository.impl.BookRepoImpl;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -23,16 +23,16 @@ import java.util.Optional;
  * @author Created by ZotovES on 07.04.2026
  * Активити получения топа книг
  */
-public class BooksActivity implements Service {
+public class BookActivity implements Service {
     private final RecordService recordService;
-    private final AuthorsRepo authorsRepo;
-    private final BooksRepo booksRepo;
+    private final AuthorRepo authorsRepo;
+    private final BookRepo booksRepo;
     private final Logger logger = ServiceLocator.getLogger();
 
-    public BooksActivity() {
+    public BookActivity() {
         recordService = ServiceLocator.getRecordService();
-        authorsRepo = new AuthorsRepoImpl(recordService);
-        this.booksRepo = new BooksRepoImpl(recordService);
+        authorsRepo = new AuthorRepoImpl(recordService);
+        this.booksRepo = new BookRepoImpl(recordService);
     }
 
     @Action(name = "GetTopBooksActivity", scope = Scope.PUBLIC)

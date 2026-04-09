@@ -7,7 +7,7 @@ import com.bmc.arsys.rx.services.common.annotation.RxInstanceTransactional;
 import com.bmc.arsys.rx.services.record.RecordService;
 import com.example.bundle.domain.Author;
 import com.example.bundle.mapper.EntityMapperFactory;
-import com.example.bundle.repository.AuthorsRepo;
+import com.example.bundle.repository.AuthorRepo;
 import org.springframework.transaction.annotation.Isolation;
 
 import java.util.*;
@@ -18,12 +18,12 @@ import static com.example.bundle.constant.Constants.*;
  * @author Created by ZotovES on 09.04.2026
  * Репозиторий авторов
  */
-public class AuthorsRepoImpl implements AuthorsRepo {
+public class AuthorRepoImpl implements AuthorRepo {
     private static final int PAGE_SIZE_FIND_ONE_RECORD = 1;
     private static final int PAGE_START_INDEX_FIND_ONE_RECORD = 0;
     private final RecordService recordService;
 
-    public AuthorsRepoImpl(RecordService recordService) {this.recordService = recordService;}
+    public AuthorRepoImpl(RecordService recordService) {this.recordService = recordService;}
 
     /**
      * Поиск автора по ид отображения

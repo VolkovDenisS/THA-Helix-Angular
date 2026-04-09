@@ -8,7 +8,7 @@ import java.util.Optional;
  * @author Created by ZotovES on 09.04.2026
  * Репозиторий авторов
  */
-public interface AuthorsRepo {
+public interface AuthorRepo {
     /**
      * Поиск автора по ид отображения
      *
