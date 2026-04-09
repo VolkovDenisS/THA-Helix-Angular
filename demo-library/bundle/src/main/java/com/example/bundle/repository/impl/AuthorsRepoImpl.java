@@ -19,6 +19,8 @@ import static com.example.bundle.constant.Constants.*;
  * Репозиторий авторов
  */
 public class AuthorsRepoImpl implements AuthorsRepo {
+    private static final int PAGE_SIZE_FIND_ONE_RECORD = 1;
+    private static final int PAGE_START_INDEX_FIND_ONE_RECORD = 0;
     private final RecordService recordService;
 
     public AuthorsRepoImpl(RecordService recordService) {this.recordService = recordService;}
@@ -32,8 +34,16 @@ public class AuthorsRepoImpl implements AuthorsRepo {
     @Override
     @RxInstanceTransactional(readOnly = true, isolation = Isolation.DEFAULT, rollbackFor = Exception.class)
     public Optional<Author> findByDisplayId(String displayId) {
-        final int pageSize = 1;
-        final int startIndex = 0;
+        //noinspection unchecked
+        return Optional.ofNullable(recordService.getRecordInstancesByIdDataPage(getDataPageQueryParameters(displayId)))
+                .map(DataPage::getData).stream()
+                .flatMap(Collection::stream)
+                .findFirst()
+                .map(val -> (HashMap<String, Object>) val)
+                .map(EntityMapperFactory::mappingToAuthor);
+    }
+
+    private static DataPageQueryParameters getDataPageQueryParameters(String displayId) {
         Map<String, QueryPredicate> queryPredicates = new HashMap<>();
         queryPredicates.put(RecordService.RECORD_DEFINITION_QUERY_PARAMETER_NAME,
                 new QueryPredicate(RecordService.RECORD_DEFINITION_QUERY_PARAMETER_NAME,
@@ -41,20 +51,8 @@ public class AuthorsRepoImpl implements AuthorsRepo {
         String key = String.valueOf(AUTHORS_DISPLAY_ID_FIELD_ID);
         queryPredicates.put(key, new QueryPredicate(key, displayId));
 
-        DataPageQueryParameters params = new DataPageQueryParameters(pageSize, startIndex, getPropertySelections(),
-                null, queryPredicates);
-
-
-        //noinspection unchecked
-        return Optional.ofNullable(recordService.getRecordInstancesByIdDataPage(params))
-                .map(DataPage::getData).stream()
-                .flatMap(Collection::stream)
-                .findFirst()
-//                .filter(val-> val instanceof HashMap )
-                .map(val -> (HashMap<String, Object>) val)
-                .map(EntityMapperFactory::mappingToAuthor);
-//        RecordInstance recordInstance = recordService.getRecordInstancesByIdDataPage(AUTHORS_RECORD_DEFINITION_NAME, displayId);
-//        return Optional.of(mappingToAuthor(recordInstance));
+        return new DataPageQueryParameters(PAGE_SIZE_FIND_ONE_RECORD, PAGE_START_INDEX_FIND_ONE_RECORD,
+                getPropertySelections(), null, queryPredicates);
     }
 
     private static List<String> getPropertySelections() {

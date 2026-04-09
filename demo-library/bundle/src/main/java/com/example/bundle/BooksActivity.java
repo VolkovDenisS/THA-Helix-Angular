@@ -2,71 +2,58 @@ package com.example.bundle;
 
 import com.bmc.arsys.rx.application.common.ServiceLocator;
 import com.bmc.arsys.rx.services.action.domain.Action;
-import com.bmc.arsys.rx.services.common.DataPage;
-import com.bmc.arsys.rx.services.common.DataPageQueryParameters;
-import com.bmc.arsys.rx.services.common.QueryPredicate;
+import com.bmc.arsys.rx.services.common.Logger;
 import com.bmc.arsys.rx.services.common.Service;
 import com.bmc.arsys.rx.services.common.domain.Scope;
 import com.bmc.arsys.rx.services.record.RecordService;
-import com.bmc.arsys.rx.services.record.domain.RecordInstance;
+import com.example.bundle.domain.Author;
+import com.example.bundle.domain.Book;
 import com.example.bundle.repository.AuthorsRepo;
+import com.example.bundle.repository.BooksRepo;
 import com.example.bundle.repository.impl.AuthorsRepoImpl;
+import com.example.bundle.repository.impl.BooksRepoImpl;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Collections;
 import java.util.List;
-import java.util.Map;
+import java.util.Optional;
 
 /**
  * @author Created by ZotovES on 07.04.2026
  * Активити получения топа книг
  */
 public class BooksActivity implements Service {
-    private static final String QUERY_TYPE_RECORD_DATA =
-            "com.bmc.arsys.rx.application.record.datapage.RecordInstanceDataPageQuery";
-    private static final String BOOKS_RECORD_DEFINITION_NAME = "com.example.demo-library:Books";
-    private static final String BOOKS_AUTHOR_FIELD_ID = "536870917";
-    private static final String BOOKS_AUTHOR_FIELD_NAME = "Display ID";
     private final RecordService recordService;
     private final AuthorsRepo authorsRepo;
+    private final BooksRepo booksRepo;
+    private final Logger logger = ServiceLocator.getLogger();
 
     public BooksActivity() {
         recordService = ServiceLocator.getRecordService();
         authorsRepo = new AuthorsRepoImpl(recordService);
+        this.booksRepo = new BooksRepoImpl(recordService);
     }
 
     @Action(name = "GetTopBooksActivity", scope = Scope.PUBLIC)
-    public Object action() {
-        ServiceLocator.getLogger().info("Json Converter Log");
+    public String action() {
+        logger.info("GetTopBooksActivity");
 
-        return authorsRepo.findByDisplayId("000000000000001")
-                .map(authors -> {
-                    final int pageSize = 2;
-                    final int startIndex = 0;
-                    Map<String, QueryPredicate> queryPredicates = new HashMap<>();
-                    queryPredicates.put(RecordService.RECORD_DEFINITION_QUERY_PARAMETER_NAME,
-                            new QueryPredicate(RecordService.RECORD_DEFINITION_QUERY_PARAMETER_NAME,
-                                    BOOKS_RECORD_DEFINITION_NAME));
-                    queryPredicates.put(BOOKS_AUTHOR_FIELD_ID, new QueryPredicate(BOOKS_AUTHOR_FIELD_ID, authors.getId()));
+        Optional<Author> optAuthor = authorsRepo.findByDisplayId("000000000000001");
+        List<Book> books = optAuthor.map(Author::getId)
+                .map(booksRepo::findTopBooksByAuthorId)
+                .orElse(Collections.emptyList());
 
-                    DataPageQueryParameters params = new DataPageQueryParameters(pageSize, startIndex, getPropertySelections(),
-                            null, queryPredicates);
+        books.forEach(book -> optAuthor.ifPresent(book::setAuthor));
 
-                    return recordService.getRecordInstancesByIdDataPage(params);
-                })
-                .orElse(new DataPage());
-    }
-
-    private static List<String> getPropertySelections() {
-        List<String> propertySelections = new ArrayList<>();
-        propertySelections.add(Integer.toString(1));
-        propertySelections.add(Integer.toString(7));
-        propertySelections.add(Integer.toString(8));
-        propertySelections.add(String.valueOf(RecordInstance.RECORD_ID_FIELD_ID));
-        propertySelections.add(Integer.toString(536870914));
-        propertySelections.add(Integer.toString(536870915));
-        propertySelections.add(Integer.toString(536870916));
-        propertySelections.add(Integer.toString(536870917));
-        return propertySelections;
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            String jsonTopBooks = mapper.writeValueAsString(books);
+            logger.info("Top Books: " + jsonTopBooks);
+            return jsonTopBooks;
+        } catch (JsonProcessingException e) {
+            logger.error("Json convert error", e);
+            return "[]";
+        }
     }
 }

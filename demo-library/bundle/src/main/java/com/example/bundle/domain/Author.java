@@ -7,20 +7,11 @@ import java.util.Objects;
  * Модель автора
  */
 public class Author {
-    public Author() {}
-
-    public Author(String id, String displayId, String fullName, String from, String email) {
-        this.id = id;
-        this.displayId = displayId;
-        this.fullName = fullName;
-        this.from = from;
-        this.email = email;
-    }
-
     /**
      * Уникальный идентификатор
      */
     private String id;
+
     /**
      * Ид отображения
      */
@@ -33,11 +24,20 @@ public class Author {
      * Адрес
      */
     private String from;
-
     /**
      * Почта
      */
     private String email;
+
+    public Author() {}
+
+    public Author(String id, String displayId, String fullName, String from, String email) {
+        this.id = id;
+        this.displayId = displayId;
+        this.fullName = fullName;
+        this.from = from;
+        this.email = email;
+    }
 
     public String getId() {
         return id;
@@ -94,5 +94,16 @@ public class Author {
         int result = Objects.hashCode(id);
         result = 31 * result + Objects.hashCode(displayId);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id='" + id + '\'' +
+                ", displayId='" + displayId + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", from='" + from + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
