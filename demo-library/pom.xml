@@ -4,15 +4,15 @@
 
     <groupId>com.example</groupId>
     <artifactId>demo-library-all</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>4.8.16</version>
     <packaging>pom</packaging>
 
     <properties>
       <!-- START: Bundle specific configuration. Verify and Change as per environment -->
-		<developerUserName>developer</developerUserName>
-		<developerPassword>developer</developerPassword>
+        <developerUserName>Demo</developerUserName>
+        <developerPassword>R9p)Z/L!q"EV2tF:</developerPassword>
 		<!-- Server name with Jetty port. -->
-		<webUrl>http://localhost:8008</webUrl>
+        <webUrl>http://84.201.140.175:8008</webUrl>
 		<!--  Decides which overlay mode the SDK calls to server work in. -->
 		<overlayMode>1</overlayMode>
 	  <!-- END: Bundle specific configuration.-->
@@ -57,7 +57,7 @@
 		<rx-sdk.version>23.3.02-SNAPSHOT</rx-sdk.version>
 		<servicemix-aspectj.version>1.9.1_1</servicemix-aspectj.version>
 		<maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
-		<aspectj-maven-plugin.version>1.7</aspectj-maven-plugin.version>
+        <aspectj-maven-plugin.version>1.16.0</aspectj-maven-plugin.version>
 		<aspectj-complianceLevel.version>10</aspectj-complianceLevel.version>
 		<javax.ws.rs.version>2.0.1</javax.ws.rs.version>
 	</properties>

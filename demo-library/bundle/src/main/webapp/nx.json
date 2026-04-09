@@ -11,5 +11,42 @@
     "shell": {
       "tags": []
     }
+  },
+  "cli": {
+    "warnings": {
+      "versionMismatch": false
+    },
+    "packageManager": "yarn",
+    "analytics": false
+  },
+  "generators": {
+    "@nrwl/schematics:application": {
+      "style": "scss",
+      "framework": "angular"
+    },
+    "@nrwl/schematics:library": {
+      "style": "scss"
+    },
+    "@nrwl/angular:application": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "none"
+    },
+    "@nrwl/angular:library": {
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "style": "css"
+    }
+  },
+  "targetDefaults": {
+    "lint": {
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json"
+      ]
+    }
   }
 }

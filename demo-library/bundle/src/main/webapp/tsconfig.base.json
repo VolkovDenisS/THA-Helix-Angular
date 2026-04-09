@@ -21,7 +21,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-    }
+      "@com.example.demo-library/com-example-demo-library": [
+        "libs/com-example-demo-library/src/index.ts"
+      ]
+    },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   },
   "exclude": [
     "node_modules",
