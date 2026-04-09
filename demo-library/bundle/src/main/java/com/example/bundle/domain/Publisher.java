@@ -4,43 +4,34 @@ import java.util.Objects;
 
 /**
  * @author Created by ZotovES on 09.04.2026
- * Модель автора
+ * Издатель
+ *
  */
-public class Author {
+public class Publisher {
     /**
      * Уникальный идентификатор
      */
     private String id;
-
     /**
      * Ид отображения
      */
     private String displayId;
     /**
-     * Полное имя автора
+     * Наименование
      */
-    private String fullName;
-    /**
-     * Адрес
-     */
-    private String from;
-    /**
-     * Почта
-     */
-    private String email;
+    private String name;
 
-    public Author() {}
+    public Publisher() {
+    }
 
-    public Author(String id) {
+    public Publisher(String id) {
         this.id = id;
     }
 
-    public Author(String id, String displayId, String fullName, String from, String email) {
+    public Publisher(String id, String displayId, String name) {
         this.id = id;
         this.displayId = displayId;
-        this.fullName = fullName;
-        this.from = from;
-        this.email = email;
+        this.name = name;
     }
 
     public String getId() {
@@ -59,28 +50,12 @@ public class Author {
         this.displayId = displayId;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getName() {
+        return name;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public String getFrom() {
-        return from;
-    }
-
-    public void setFrom(String from) {
-        this.from = from;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
@@ -89,25 +64,25 @@ public class Author {
             return false;
         }
 
-        Author author = (Author) object;
-        return Objects.equals(id, author.id) && Objects.equals(displayId, author.displayId);
+        Publisher publisher = (Publisher) object;
+        return Objects.equals(id, publisher.id) && Objects.equals(displayId, publisher.displayId) &&
+                Objects.equals(name, publisher.name);
     }
 
     @Override
     public int hashCode() {
         int result = Objects.hashCode(id);
         result = 31 * result + Objects.hashCode(displayId);
+        result = 31 * result + Objects.hashCode(name);
         return result;
     }
 
     @Override
     public String toString() {
-        return "Author{" +
+        return "Publisher{" +
                 "id='" + id + '\'' +
                 ", displayId='" + displayId + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", from='" + from + '\'' +
-                ", email='" + email + '\'' +
+                ", name='" + name + '\'' +
                 '}';
     }
 }

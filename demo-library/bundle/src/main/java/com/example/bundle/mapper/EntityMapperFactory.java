@@ -1,10 +1,11 @@
 package com.example.bundle.mapper;
 
-import com.bmc.arsys.rx.services.record.domain.RecordInstance;
 import com.example.bundle.domain.Author;
 import com.example.bundle.domain.Book;
+import com.example.bundle.domain.Publisher;
 
 import java.util.Map;
+import java.util.Optional;
 
 import static com.example.bundle.constant.Constants.*;
 
@@ -13,21 +14,6 @@ import static com.example.bundle.constant.Constants.*;
  * Фибрика маперов
  */
 public class EntityMapperFactory {
-    /**
-     * Маппер записи в сущность автора
-     *
-     * @param recordInstance запись
-     * @return автор
-     */
-    public static Author mappingToAuthor(RecordInstance recordInstance) {
-        return new Author(
-                recordInstance.getFieldValue(AUTHORS_ID_FIELD_ID),
-                recordInstance.getFieldValue(AUTHORS_DISPLAY_ID_FIELD_ID),
-                recordInstance.getFieldValue(AUTHORS_FULL_NAME_FIELD_ID),
-                recordInstance.getFieldValue(AUTHORS_FROM_FIELD_ID),
-                recordInstance.getFieldValue(AUTHORS_EMAIL_FIELD_ID));
-    }
-
     /**
      * Маппер записи в сущность автора
      *
@@ -56,7 +42,27 @@ public class EntityMapperFactory {
                 record.getOrDefault(String.valueOf(BOOKS_NAME_FIELD_ID), "").toString(),
                 record.getOrDefault(String.valueOf(BOOKS_DESCRIPTION_FIELD_ID), "").toString(),
                 record.getOrDefault(String.valueOf(BOOKS_PRICE_FIELD_ID), "").toString(),
-                null,
-                null);
+                Optional.ofNullable(record.get(String.valueOf(BOOKS_AUTHOR_FIELD_ID)))
+                        .map(Object::toString)
+                        .map(Author::new)
+                        .orElse(null),
+                Optional.ofNullable(record.get(String.valueOf(BOOKS_PUBLISHER_FIELD_ID)))
+                        .map(Object::toString)
+                        .map(Publisher::new)
+                        .orElse(null));
+    }
+
+    /**
+     * Маппер записи в издателя
+     *
+     * @param record запис
+     * @return издатель
+     */
+    public static Publisher mappingToPublisher(Map<String, Object> record) {
+        return new Publisher(
+                record.getOrDefault(String.valueOf(PUBLISHERS_ID_FIELD_ID), "").toString(),
+                record.getOrDefault(String.valueOf(PUBLISHERS_DISPLAY_ID_FIELD_ID), "").toString(),
+                record.getOrDefault(String.valueOf(PUBLISHERS_NAME_FIELD_ID), "").toString()
+        );
     }
 }

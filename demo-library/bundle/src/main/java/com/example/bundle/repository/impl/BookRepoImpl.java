@@ -5,7 +5,6 @@ import com.bmc.arsys.rx.services.common.DataPageQueryParameters;
 import com.bmc.arsys.rx.services.common.QueryPredicate;
 import com.bmc.arsys.rx.services.common.annotation.RxInstanceTransactional;
 import com.bmc.arsys.rx.services.record.RecordService;
-import com.bmc.arsys.rx.services.record.domain.RecordInstance;
 import com.example.bundle.domain.Book;
 import com.example.bundle.mapper.EntityMapperFactory;
 import com.example.bundle.repository.BookRepo;
@@ -14,8 +13,7 @@ import org.springframework.transaction.annotation.Isolation;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static com.example.bundle.constant.Constants.BOOKS_AUTHOR_FIELD_ID;
-import static com.example.bundle.constant.Constants.BOOKS_RECORD_DEFINITION_NAME;
+import static com.example.bundle.constant.Constants.*;
 
 /**
  * @author Created by ZotovES on 09.04.2026
@@ -61,14 +59,13 @@ public class BookRepoImpl implements BookRepo {
 
     private static List<String> getPropertySelections() {
         List<String> propertySelections = new ArrayList<>();
-        propertySelections.add(Integer.toString(1));
-        propertySelections.add(Integer.toString(7));
-        propertySelections.add(Integer.toString(8));
-        propertySelections.add(String.valueOf(RecordInstance.RECORD_ID_FIELD_ID));
-        propertySelections.add(Integer.toString(536870914));
-        propertySelections.add(Integer.toString(536870915));
-        propertySelections.add(Integer.toString(536870916));
-        propertySelections.add(Integer.toString(536870917));
+        propertySelections.add(String.valueOf(BOOKS_DISPLAY_ID_FIELD_ID));
+        propertySelections.add(String.valueOf(BOOKS_ID_FIELD_ID));
+        propertySelections.add(String.valueOf(BOOKS_NAME_FIELD_ID));
+        propertySelections.add(String.valueOf(BOOKS_DESCRIPTION_FIELD_ID));
+        propertySelections.add(String.valueOf(BOOKS_PRICE_FIELD_ID));
+        propertySelections.add(String.valueOf(BOOKS_AUTHOR_FIELD_ID));
+        propertySelections.add(String.valueOf(BOOKS_PUBLISHER_FIELD_ID));
         return propertySelections;
     }
 }
