@@ -1,8 +1,53 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "",
   "projects": {
+    "com-example-demo-library": {
+      "projectType": "library",
+      "root": "libs/com-example-demo-library",
+      "sourceRoot": "libs/com-example-demo-library/src",
+      "prefix": "com.example.demo-library",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "outputs": [
+            "dist/libs/com-example-demo-library"
+          ],
+          "options": {
+            "project": "libs/com-example-demo-library/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/com-example-demo-library/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/com-example-demo-library/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/com-example-demo-library"
+          ],
+          "options": {
+            "jestConfig": "libs/com-example-demo-library/jest.config.ts",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/com-example-demo-library/**/*.ts",
+              "libs/com-example-demo-library/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "shell": {
       "root": "apps/shell/",
       "sourceRoot": "apps/shell/src",
@@ -15,7 +60,7 @@
       },
       "architect": {
         "build": {
-          "builder": "ngx-build-plus:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "progress": false,
             "outputPath": "dist/apps/shell",
@@ -40,7 +85,7 @@
               },
               {
                 "glob": "**/*",
-                "input": "scripts/ckeditor-4.14.1/",
+                "input": "scripts/ckeditor/",
                 "output": "assets/libs/ckeditor/"
               },
               {
@@ -52,30 +97,47 @@
                 "glob": "**/*",
                 "input": "apps/shell/src/assets/images/",
                 "output": "assets/libs/ckeditor/plugins/expression-editor/"
+              },
+              {
+                "glob": "**/*",
+                "input": "libs/com-example-demo-library/src/lib/i18n/",
+                "output": "assets/i18n/"
+              },
+              {
+                "glob": "**/*",
+                "input": "libs/com-example-demo-library/src/lib/assets/",
+                "output": "assets/libs/demo-library/resources/"
               }
             ],
             "styles": [
               "apps/shell/src/styles.scss",
-              "scripts/rappid-3.1.1/rappid.min.css"
+              {
+                "input": "libs/com-example-demo-library/src/lib/styles/com-example-demo-library.scss",
+                "bundleName": "com-example-demo-library"
+              }
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "styles"
+                "styles",
+                "./node_modules"
               ]
             },
             "scripts": [
-              "scripts/rxjs-6.5.4/rxjs.umd.min.js",
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/lodash/lodash.min.js",
-              "node_modules/d3/dist/d3.min.js",
-              "node_modules/backbone/backbone-min.js",
-              "scripts/ckeditor-4.14.1/ckeditor.min.js",
-              "scripts/rappid-3.1.1/rappid.min.js"
+              "scripts/ckeditor/ckeditor.js"
             ],
             "extractLicenses": true,
             "crossOrigin": "use-credentials",
             "allowedCommonJsDependencies": [
               "@bmc-ux/adapt-angular",
+              "@clientio/rappid",
+              "quoted-printable",
+              "utf8",
+              "jsep",
+              "prismjs/prism.js",
+              "backbone",
+              "jquery",
+              "load-script",
+              "moment",
               "lodash",
               "moment-es6",
               "hammerjs",
@@ -100,7 +162,8 @@
               "@angular/common/locales/es",
               "@angular/common/locales/de",
               "@angular/common/locales/da"
-            ]
+            ],
+            "inlineStyleLanguage": "scss"
           },
           "configurations": {
             "production": {
@@ -114,7 +177,16 @@
                   "with": "apps/shell/src/app/app.module.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                "scripts": true,
+                "fonts": {
+                  "inline": true
+                },
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              },
               "outputHashing": "none",
               "sourceMap": true,
               "namedChunks": true,
@@ -129,21 +201,55 @@
                   "maximumWarning": "10mb",
                   "maximumError": "30mb"
                 }
-              ]
+              ],
+              "indexTransform": "node_modules/@helix/schematics/src/config/webpack.transform-index.prod.js",
+              "customWebpackConfig": {
+                "path": "node_modules/@helix/schematics/src/config/webpack.prod.js"
+              }
+            },
+            "development": {
+              "customWebpackConfig": {
+                "path": "node_modules/@helix/schematics/src/config/webpack.prod.js"
+              },
+              "buildOptimizer": false,
+              "optimization": {
+                "scripts": true,
+                "fonts": {
+                  "inline": true
+                },
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              },
+              "vendorChunk": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "indexTransform": "node_modules/@helix/schematics/src/config/webpack.transform-index.dev.js"
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "ngx-build-plus:dev-server",
-          "options": {
-            "browserTarget": "shell:build",
-            "proxyConfig": "proxy.conf.js"
-          },
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "shell:build:production"
+            },
+            "rsso-debug": {
+              "browserTarget": "shell:build:development",
+              "proxyConfig": "rsso-proxy.conf.js",
+              "ssl": true,
+              "sslCert": "tools/certificate/bmc-rsso-debug-ca.crt",
+              "sslKey": "tools/certificate/bmc-rsso-debug-ca.key"
+            },
+            "development": {
+              "browserTarget": "shell:build:development",
+              "proxyConfig": "proxy.conf.js"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -154,10 +260,10 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-              "lintFilePatterns": [
-                "apps/shell//src/**/*.ts",
-                "apps/shell//src/**/*.html"
-              ]
+            "lintFilePatterns": [
+              "apps/shell//src/**/*.ts",
+              "apps/shell//src/**/*.html"
+            ]
           }
         },
         "test": {
@@ -175,15 +281,14 @@
       "versionMismatch": false
     },
     "packageManager": "yarn",
-    "analytics": false
-  },
-  "schematics": {
-    "@nrwl/schematics:application": {
-      "style": "scss",
-      "framework": "angular"
+    "analytics": false,
+    "cache": {
+      "enabled": true,
+      "path": "./node_modules/.cache/bmc/helix/.angular"
     },
-    "@nrwl/schematics:library": {
-      "style": "scss"
-    }
+    "schematicCollections": [
+      "@schematics/angular",
+      "@helix/schematics"
+    ]
   }
 }

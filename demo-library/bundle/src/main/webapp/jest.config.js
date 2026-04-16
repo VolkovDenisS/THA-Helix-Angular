@@ -1,6 +1,7 @@
 module.exports = {
   projects: [
-    '<rootDir>/apps/shell/',
-    '<rootDir>/libs/**/',
+      "<rootDir>/apps/shell/",
+      "<rootDir>/libs/**/",
+      "<rootDir>/libs/com-example-demo-library",
   ],
 };
