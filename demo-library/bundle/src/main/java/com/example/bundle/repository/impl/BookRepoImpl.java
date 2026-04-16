@@ -7,7 +7,8 @@ import com.bmc.arsys.rx.services.common.SortByValue;
 import com.bmc.arsys.rx.services.common.annotation.RxInstanceTransactional;
 import com.bmc.arsys.rx.services.record.RecordService;
 import com.example.bundle.domain.Book;
-import com.example.bundle.mapper.EntityMapperFactory;
+import com.example.bundle.mapper.Mapper;
+import com.example.bundle.mapper.impl.BookToEntityMapperImpl;
 import com.example.bundle.repository.BookRepo;
 import org.springframework.transaction.annotation.Isolation;
 
@@ -23,6 +24,7 @@ import static com.example.bundle.constant.Constants.*;
 public class BookRepoImpl implements BookRepo {
     private static final int PAGE_SIZE_FIND_TOP = 2; //Кол-во элементов в списке топа книг по ТЗ
     private static final int PAGE_START_INDEX_FIRST_PAGE = 0;
+    private final Mapper<Object, Book> mapper = new BookToEntityMapperImpl();
     private final RecordService recordService;
 
     public BookRepoImpl(RecordService recordService) {
@@ -38,12 +40,10 @@ public class BookRepoImpl implements BookRepo {
     @Override
     @RxInstanceTransactional(readOnly = true, isolation = Isolation.DEFAULT, rollbackFor = Exception.class)
     public List<Book> findTopBooksByAuthorId(String authorId) {
-        //noinspection unchecked
         return Optional.ofNullable(recordService.getRecordInstancesByIdDataPage(getDataPageQueryParameters(authorId)))
                 .map(DataPage::getData).stream()
                 .flatMap(Collection::stream)
-                .map(val -> (HashMap<String, Object>) val)
-                .map(EntityMapperFactory::mappingToBook)
+                .map(mapper::toEntity)
                 .collect(Collectors.toList());
     }
 

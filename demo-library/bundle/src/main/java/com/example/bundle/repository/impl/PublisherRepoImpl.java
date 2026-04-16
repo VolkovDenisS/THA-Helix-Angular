@@ -5,7 +5,8 @@ import com.bmc.arsys.rx.services.common.DataPageQueryParameters;
 import com.bmc.arsys.rx.services.common.annotation.RxInstanceTransactional;
 import com.bmc.arsys.rx.services.record.RecordService;
 import com.example.bundle.domain.Publisher;
-import com.example.bundle.mapper.EntityMapperFactory;
+import com.example.bundle.mapper.Mapper;
+import com.example.bundle.mapper.impl.PublisherToEntityMapperImpl;
 import com.example.bundle.repository.PublisherRepo;
 import org.springframework.transaction.annotation.Isolation;
 
@@ -22,6 +23,7 @@ public class PublisherRepoImpl implements PublisherRepo {
     private static final int PAGE_START_INDEX_FIRST_PAGE = 0;
     private static final String QUERY_TYPE_RECORD_DATA =
             "com.bmc.arsys.rx.application.record.datapage.RecordInstanceDataPageQuery";
+    private final Mapper<Object, Publisher> mapper = new PublisherToEntityMapperImpl();
     private final RecordService recordService;
 
     public PublisherRepoImpl(RecordService recordService) {
@@ -40,12 +42,10 @@ public class PublisherRepoImpl implements PublisherRepo {
         if (ids == null || ids.isEmpty()) {
             return Collections.emptyMap();
         }
-        //noinspection unchecked
         return Optional.ofNullable(recordService.getRecordInstancesByIdDataPage(getDataPageQueryParameters(ids)))
                 .map(DataPage::getData).stream()
                 .flatMap(Collection::stream)
-                .map(val -> (HashMap<String, Object>) val)
-                .map(EntityMapperFactory::mappingToPublisher)
+                .map(mapper::toEntity)
                 .collect(Collectors.toMap(Publisher::getId, publisher -> publisher));
     }
 

@@ -1,12 +1,11 @@
 package com.example.bundle.repository.impl;
 
-import com.bmc.arsys.rx.services.common.DataPage;
 import com.bmc.arsys.rx.services.common.DataPageQueryParameters;
 import com.bmc.arsys.rx.services.common.QueryPredicate;
 import com.bmc.arsys.rx.services.common.annotation.RxInstanceTransactional;
 import com.bmc.arsys.rx.services.record.RecordService;
 import com.example.bundle.domain.Author;
-import com.example.bundle.mapper.EntityMapperFactory;
+import com.example.bundle.mapper.impl.AuthorToEntityMapperImpl;
 import com.example.bundle.repository.AuthorRepo;
 import org.springframework.transaction.annotation.Isolation;
 
@@ -21,6 +20,7 @@ import static com.example.bundle.constant.Constants.*;
 public class AuthorRepoImpl implements AuthorRepo {
     private static final int PAGE_SIZE_FIND_ONE_RECORD = 1;
     private static final int PAGE_START_INDEX_FIND_ONE_RECORD = 0;
+    private final AuthorToEntityMapperImpl mapper = new AuthorToEntityMapperImpl();
     private final RecordService recordService;
 
     public AuthorRepoImpl(RecordService recordService) {this.recordService = recordService;}
@@ -34,13 +34,8 @@ public class AuthorRepoImpl implements AuthorRepo {
     @Override
     @RxInstanceTransactional(readOnly = true, isolation = Isolation.DEFAULT, rollbackFor = Exception.class)
     public Optional<Author> findByDisplayId(String displayId) {
-        //noinspection unchecked
         return Optional.ofNullable(recordService.getRecordInstancesByIdDataPage(getDataPageQueryParameters(displayId)))
-                .map(DataPage::getData).stream()
-                .flatMap(Collection::stream)
-                .findFirst()
-                .map(val -> (HashMap<String, Object>) val)
-                .map(EntityMapperFactory::mappingToAuthor);
+                .map(mapper::toEntity);
     }
 
     private static DataPageQueryParameters getDataPageQueryParameters(String displayId) {
