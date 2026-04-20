@@ -1,8 +1,20 @@
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FC
-   timestamp      : 1775584125
+   name           : LSGADG1AAP0IEATCC492TCC492PGMP
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 004adace-6b9a-4178-abc5-846bb2eb7ad5
+   owner-objects  : 17\f3a88513-8d29-46f4-acef-25355c6a0550
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Create
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FC
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 02116185-ef37-49d6-9e4a-92c5e7f3e3fb
    owner-objects  : 35\0
@@ -11,10 +23,22 @@ begin localizable string
    string-text    : Assigned
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q4
-   timestamp      : 1775584310
+   name           : LSGADG1AAP0IEATCC32ITCC32IPD8F
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 0496110c-a520-4a43-bb9c-6efdc747a015
+   owner-objects  : 17\1f1e15bc-095e-4095-9d5e-2967dec76e3d
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Price
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q4
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 0d70c670-d60a-4665-9120-b22f29bc2872
    owner-objects  : 35\0
@@ -23,10 +47,22 @@ begin localizable string
    string-text    : Fixed
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75CY
-   timestamp      : 1775584410
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF1J
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 15070d75-e563-416e-890e-14178f0dd922
+   owner-objects  : 17\f9acc530-a959-47fb-9739-38300cde99a1
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Price
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75CY
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 17b63330-2479-486e-b3aa-e04da9ebb3e8
    owner-objects  : 35\0
@@ -35,10 +71,34 @@ begin localizable string
    string-text    : New
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q7
-   timestamp      : 1775584310
+   name           : LSGADG1AAP0IEATCC3LDTCC3LDPEG3
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 1e67b79a-1a6d-4ced-9fd5-55437050e314
+   owner-objects  : 17\e390a958-d54f-4ae6-8eb9-1fb416a5fb74
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Description
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3LDTCC3LDPEG8
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 1f9e9a68-5d82-4429-ba1d-c63c00c46844
+   owner-objects  : 17\53ffaba0-b0f2-4c56-85df-92a33d59db11
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Create
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q7
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 21010ee4-7587-429d-822e-41b4635a1530
    owner-objects  : 35\0
@@ -47,10 +107,142 @@ begin localizable string
    string-text    : Not Listening
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75J1
-   timestamp      : 1775584461
+   name           : LSGADG1AAP0IEATCC32ITCC32IPD8I
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 21c9f91c-71f4-4030-a272-d29cd970269d
+   owner-objects  : 17\671f3c3b-598c-4ab8-a193-9605b61fff69
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Name
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC492TCC492PGMK
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 243d5625-ba98-4dac-b529-35bb1a740eb2
+   owner-objects  : 17\85d91ed2-11b6-407e-b024-af62c75ab47c
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Full Name
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC5DBTCC5DBPIFJ
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 250ecd6f-d677-4a0e-a4cb-47b7207190d4
+   owner-objects  : 17\aa98f7b6-f38a-4cab-982d-8101bda33b05
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Authors
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF1I
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 2b804a18-7d7a-42df-935f-76427447bbb1
+   owner-objects  : 17\16c87599-0772-485d-988b-78bd2734aa72
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Name
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC479TCC479PG8G
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 2be9bec9-0687-4162-ba80-d55ada0764b3
+   owner-objects  : 17\28e64ad1-788d-4d44-87b3-9c48c698063a
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Description
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF13
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 2f7cae7c-0ec0-4f94-b804-a095b75783ce
+   owner-objects  : 17\64e8d57d-bc15-4f44-a533-ae0cdb672579
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Description
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3IDTCC3IDPDHU
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 30f23a4c-8cad-45fd-a428-e8658fa02d11
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : New
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3LDTCC3LDPEG7
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 32728b6e-200f-43ce-b7ff-1a5bfac3878c
+   owner-objects  : 17\eccda9ba-07e6-4558-8687-10c232ae0c1c
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Name
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3IDTCC3IDPDHV
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 378ec2d0-62ca-42fb-a7bd-6dc6ca84496d
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Assigned
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3IDTCC3IDPDHW
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 3791a3ec-e073-421c-a812-960f3541d2f7
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Fixed
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF15
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 37bfd6fa-a619-4cf2-b984-4001269138cb
+   owner-objects  : 17\43cc6ee8-5e50-41c5-a2e5-e8ca8783e845
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Delete
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75J1
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 3946b55e-d246-41e6-8550-afcc3bd71c82
    owner-objects  : 35\0
@@ -60,9 +252,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75DC
-   timestamp      : 1775584410
+   timestamp      : 1776506062
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 3c800bf7-59f3-40b9-8316-20b98bd85d3c
    owner-objects  : 35\0
@@ -71,10 +263,34 @@ begin localizable string
    string-text    : Closed
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75JI
-   timestamp      : 1775584461
+   name           : LSGADG1AAP0IEATCC3GKTCC3GKPDD7
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 3d8ec2f8-60b9-4b62-a179-4d1d182553f7
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Rejected
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3F6TCC3F6PCZL
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 3df5456d-b41d-4a5e-9fa8-cca84b314ef7
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Closed
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75JI
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 3e390c23-1db6-405a-a4b9-460dbd14f18e
    owner-objects  : 35\0
@@ -83,10 +299,34 @@ begin localizable string
    string-text    : Rejected
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q2
-   timestamp      : 1775584310
+   name           : LSGADG1AAP0IEATCC479TCC479PG80
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 4613ca0e-ca72-45fa-91e6-3ad23b9dc6d6
+   owner-objects  : 17\c43e23f9-157d-4f69-b815-7d5fae87ee6a
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Display ID
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3GKTCC3GKPDD5
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 4614eb65-81e5-452d-a77e-0434bb6e3563
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Assigned
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q2
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 46d859dd-a1fb-4351-8d1b-5b0156082af5
    owner-objects  : 35\0
@@ -95,10 +335,34 @@ begin localizable string
    string-text    : New
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FD
-   timestamp      : 1775584125
+   name           : LSGADG1AAP0IEATCC32ITCC32IPD8D
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 4dab9a46-ddab-4b7b-bb8b-263552ea60d2
+   owner-objects  : 17\c628e5fb-9f92-4e63-9c47-2c942f1ceeea
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Description
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3GKTCC3GKPDD8
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 4eaf176b-21ea-4b07-8d38-554cb1703410
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Closed
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FD
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 509d0d98-5bbd-4245-ad45-36a0fb3ae5f8
    owner-objects  : 35\0
@@ -107,10 +371,70 @@ begin localizable string
    string-text    : Fixed
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75J0
-   timestamp      : 1775584461
+   name           : LSGADG1AAP0IEATCC41BTCC41BPFZ7
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 553c98cd-ac50-473b-97c5-5c5608500d86
+   owner-objects  : 17\5fe3fdd8-bd96-43f4-a9ea-579b87e31a2f
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Country
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC479TCC479PG8H
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 5974f427-e4d1-4b39-ae8a-d88a5eb5e844
+   owner-objects  : 17\c0ab3143-0807-4b8e-be3f-1af4e1631183
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Modified Date
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC41BTCC41BPFZ8
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 59ae28e2-eed5-4222-a617-53f2b72d44bc
+   owner-objects  : 17\1a3b736f-454f-4fba-9973-3de94307d249
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Modified Date
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3F6TCC3F6PCZ9
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 6003b8fc-abcd-4c54-a15f-dae727b50a5a
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Fixed
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3F6TCC3F6PCZK
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 6224a64f-a33f-432b-9057-efb22de4e2e1
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Rejected
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75J0
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 625aa4d9-8003-4581-a646-44230bb686a3
    owner-objects  : 35\0
@@ -119,10 +443,34 @@ begin localizable string
    string-text    : Not Listening
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FH
-   timestamp      : 1775584125
+   name           : LSGADG1AAP0IEATCC32ITCC32IPD8H
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 63de7bbc-207a-4fbc-a0b6-e88f05cc69ab
+   owner-objects  : 17\e8f34407-65c1-47d6-939c-d610f70df2f9
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Author
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF1H
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 65913671-7e4b-498d-8279-cad1167e25e8
+   owner-objects  : 17\5e808cbf-28de-4dec-a4aa-df5c75ddcc8c
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Name
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FH
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 677d20e3-61b2-446a-83dd-522a5d4508df
    owner-objects  : 35\0
@@ -131,10 +479,46 @@ begin localizable string
    string-text    : Listening
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75JH
-   timestamp      : 1775584461
+   name           : LSGADG1AAP0IEATCC3IDTCC3IDPDIA
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 678470ce-f526-4859-b7d9-24c0cd01b12d
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Listening
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3IDTCC3IDPDHZ
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 69130a9b-121c-4c26-8a32-1f093d6cbd60
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Not Listening
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF11
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 72205fbb-e6af-4026-a30d-23e299224a18
+   owner-objects  : 17\8667dc74-2f96-4f20-a6eb-5321dcc1f1ce
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Author
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75JH
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 734edc82-62d9-47d5-81c8-fa8e69b6845e
    owner-objects  : 35\0
@@ -143,10 +527,142 @@ begin localizable string
    string-text    : Fixed
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q8
-   timestamp      : 1775584310
+   name           : LSGADG1AAP0IEATCC5DBTCC5DBPIF1
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 75914cb8-4b28-4721-bd15-07c9a4777fae
+   owner-objects  : 17\14462cc4-f945-487c-a12b-3b86a6a28762
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Books
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3LDTCC3LDPEG5
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 79f99627-c488-401f-b900-5833c460c1b7
+   owner-objects  : 17\9bd8a57e-73ae-4ae3-9171-c1eeda23e3d3
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Delete
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF19
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 7a010629-135e-41eb-bcd5-b9eeeb0657c3
+   owner-objects  : 17\1266002a-278e-461f-b5b3-c8f61bf34688
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Price
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC492TCC492PGMO
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 7d814fb9-8e61-4f4e-8b9b-0444710876d6
+   owner-objects  : 17\69d96a63-0b43-4f10-af13-217954441f55
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Modified Date
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3F6TCC3F6PCZ7
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 7f12fcc1-02f6-4572-a979-d2273659241c
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : New
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC479TCC479PG8I
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 8128f08a-8b0e-4627-ab1e-ceeecc5c556d
+   owner-objects  : 17\2c3704fc-8c06-4c1a-9942-a87061c9646c
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Country
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF10
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 83405447-127a-495d-9fbf-5cabdc7c45cc
+   owner-objects  : 17\9480a513-db22-4c7d-a6a2-e39c024ea4f1
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Display ID
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC65ITCC65IP12A
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 876afc94-b1ab-4b4f-a55a-85a086fc9f1c
+   owner-objects  : 17\fda24121-9239-49c3-baf3-fa8d42f50203
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Email
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC41BTCC41BPFZM
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 87a86d48-38ee-4088-93ed-9dd5c76472db
+   owner-objects  : 17\0c43b864-9ece-4be3-a707-0dfceca84333
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Country
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC41BTCC41BPFZK
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 87e6d2c1-e3f0-4d6c-bf6e-1d1a2144d591
+   owner-objects  : 17\de3e681a-07cd-4c56-9d42-2f154f70b4f6
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Create
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3F6TCC3F6PCZ8
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 8af5932e-4a4d-4438-95ab-22b600180bef
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Assigned
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q8
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : 8b995409-d86d-4acb-af86-298910df26bd
    owner-objects  : 35\0
@@ -155,10 +671,94 @@ begin localizable string
    string-text    : Listening
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75DE
-   timestamp      : 1775584410
+   name           : LSGADG1AAP0IEATCC32ITCC32IPD8G
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 94c6a257-262b-4b03-a83e-2018e9c42af1
+   owner-objects  : 17\b726b90f-bcda-466c-928e-be878f829e53
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Modified Date
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3F6TCC3F6PCZM
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 95c9c549-f41d-41bb-8a8d-e99de5a5040e
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Not Listening
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3GKTCC3GKPDD6
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 99bbe2a8-47ed-4dcc-9a15-0505a53d4681
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Fixed
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC492TCC492PGML
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 9daa44df-b2be-400e-a56d-3ac3fa098a61
+   owner-objects  : 17\1f1b45fc-1d63-4151-8188-4f98fed0ee06
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : From
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC5DBTCC5DBPIFI
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : 9ea1eb54-91f2-4237-8dcc-26fd79cbab44
+   owner-objects  : 17\560be402-3447-4329-927e-1ed9b77b380f
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Countries
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3F6TCC3F6PCZN
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : a2fc8bb6-147c-41c5-bcd1-160c6e83eb46
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Listening
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC41BTCC41BPFZ9
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : a4bd796d-ff18-400b-b491-441d476fab62
+   owner-objects  : 17\364b3da1-ee6b-4d7e-84a3-cdaff932db5a
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Display ID
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75DE
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : a5d17b8e-3106-460b-a382-ca085fdb499c
    owner-objects  : 35\0
@@ -167,10 +767,94 @@ begin localizable string
    string-text    : Listening
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q6
-   timestamp      : 1775584310
+   name           : LSGADG1AAP0IEATCC479TCC479PG81
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : a6704830-0c01-4ae2-99fc-8d6e48e9896d
+   owner-objects  : 17\799ce995-ca49-4c2c-b33a-995f66ce4dda
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Country
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC655TCC655P126
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : a8ebbbd3-9e2a-4173-b7b8-3bdc71d2ad33
+   owner-objects  : 17\db48ee33-87d2-4387-a302-5dd29b1fceb9
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Email
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF1K
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : a9406958-dd2c-465f-a9aa-4137121e962c
+   owner-objects  : 17\460637a8-759a-40a0-bcbb-f978898228e3
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Description
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC492TCC492PGMN
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : aaac7d66-77ef-4e40-a55c-c51bbaae0df9
+   owner-objects  : 17\52fbd9bb-21cb-4aa2-a3bd-aa3990136f75
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : From
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC34OTCC34OPDQM
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : ac0d93ff-b4df-4902-943e-66a142e2f0e2
+   owner-objects  : 17\ee8ed721-4ab7-4200-85a6-2cfc3184f70a
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : ID
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC32ITCC32IPD8E
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : ac2f9cae-12df-4d27-b02c-08711f571ad4
+   owner-objects  : 17\851cb93e-1033-4eea-bf7c-738b169cc2a7
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Display ID
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3IDTCC3IDPDHY
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : ad8713c3-b314-41a5-b372-26e4c7c6708b
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Closed
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q6
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : ae40911e-cdf7-4a10-90e6-72dd553dac50
    owner-objects  : 35\0
@@ -180,9 +864,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75JF
-   timestamp      : 1775584461
+   timestamp      : 1776506062
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : b3fc8755-6570-43b5-85cf-97e5ede7f67d
    owner-objects  : 35\0
@@ -192,9 +876,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75DD
-   timestamp      : 1775584410
+   timestamp      : 1776506062
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : b717b956-8be4-4ec5-abc1-efe7258cfe21
    owner-objects  : 35\0
@@ -204,9 +888,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75DB
-   timestamp      : 1775584410
+   timestamp      : 1776506062
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : bacdadb8-e5c7-4f65-922e-e5494631eedb
    owner-objects  : 35\0
@@ -215,10 +899,58 @@ begin localizable string
    string-text    : Rejected
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FB
-   timestamp      : 1775584125
+   name           : LSGADG1AAP0IEATCC3IDTCC3IDPDHX
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : bce5f4ac-8f57-4066-a13b-d56f33c23706
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Rejected
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC479TCC479PG8J
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : bd259170-af1f-49f4-9094-d5f721b743e2
+   owner-objects  : 17\ea9a475c-7dc1-470e-a798-9c2146bf5d46
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Delete
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC492TCC492PGMM
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : beccf1ba-7594-449d-8e92-eae4809cb1c8
+   owner-objects  : 17\7a66e9e4-1f24-48ac-b399-95153339064d
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Display ID
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC5DBTCC5DBPIF0
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : c1a544f2-bde3-48f7-bfd4-5411b0b66331
+   owner-objects  : 17\IDGADG1AAP0IEATCC3AATCC3AAPC81
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Home Page
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FB
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : c2c55c6a-f7e9-4d1d-be5e-2468441307de
    owner-objects  : 35\0
@@ -228,9 +960,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FE
-   timestamp      : 1775584125
+   timestamp      : 1776506062
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : c3b88785-55b4-4a6b-9aad-baece1e7beea
    owner-objects  : 35\0
@@ -239,10 +971,46 @@ begin localizable string
    string-text    : Rejected
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75JE
-   timestamp      : 1775584461
+   name           : LSGADG1AAP0IEATCC3LDTCC3LDPEG6
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : c3f764b2-2ee1-4439-ba06-6bba5b221ca2
+   owner-objects  : 17\f557cc6b-4d75-4c08-a405-dac25605a5cc
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Price
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC492TCC492PGM8
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : c43a7272-28b2-47f0-8618-8c450e1ba43f
+   owner-objects  : 17\48b3e4d5-e895-4786-8fb6-8098668dbaa2
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Description
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF12
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : c4cdd806-4a31-489f-8dc2-a0f2a6ac424d
+   owner-objects  : 17\d00e9673-827d-468f-b4a7-11ae61dcc3c5
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Author
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75JE
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : c5d188d1-385d-4612-a949-ce7e726d661c
    owner-objects  : 35\0
@@ -251,10 +1019,22 @@ begin localizable string
    string-text    : New
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75JJ
-   timestamp      : 1775584461
+   name           : LSGADG1AAP0IEATCC492TCC492PGM9
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : cb267889-0775-43b0-853f-86b2428b6e62
+   owner-objects  : 17\301ab9d5-33d6-4b8c-8867-115ff80a576a
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Full Name
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXQLT3EXQL75JJ
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : cf9281f5-a106-4174-b386-7251bb0b572c
    owner-objects  : 35\0
@@ -264,9 +1044,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75DA
-   timestamp      : 1775584410
+   timestamp      : 1776506062
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : d05dd070-a8ff-4b8d-b92c-14658f9b4bfe
    owner-objects  : 35\0
@@ -276,9 +1056,9 @@ begin localizable string
 end
 begin localizable string
    name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q3
-   timestamp      : 1775584310
+   timestamp      : 1776506062
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : d0d92784-3f8b-43b3-84ca-7471422164be
    owner-objects  : 35\0
@@ -287,10 +1067,46 @@ begin localizable string
    string-text    : Assigned
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FF
-   timestamp      : 1775584125
+   name           : LSGADG1AAP0IEATCC3GKTCC3GKPDD4
+   timestamp      : 1776412222
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : daa5b42c-2ef3-4319-9b7f-c1dd5fd1d1e5
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : New
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3GKTCC3GKPDD9
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : dc29f67e-d0f3-48d7-984c-72f4177be284
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Not Listening
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3LDTCC3LDPEG2
+   timestamp      : 1776412222
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : dc42ebd1-f208-4184-86c6-3a6beb45f7ac
+   owner-objects  : 17\9559d738-f003-4851-882b-09f3e45a1b02
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Author
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FF
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : df030d03-c7f1-468b-ac92-5b08f0b33bc1
    owner-objects  : 35\0
@@ -299,10 +1115,34 @@ begin localizable string
    string-text    : Closed
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75CZ
-   timestamp      : 1775584410
+   name           : LSGADG1AAP0IEATCC41BTCC41BPFZL
+   timestamp      : 1776412223
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : e1ce137b-5a7b-407a-bad6-64a60a1a8d6b
+   owner-objects  : 17\aca1bb11-a73d-4ebc-89bd-73c973f3eea9
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Description
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3LDTCC3LDPEG4
+   timestamp      : 1776412223
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : e7ede673-8880-4219-992d-e21d0d4b7223
+   owner-objects  : 17\3ae65034-3658-4568-96e6-ec902815d043
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Description
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXPGT3EXPG75CZ
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : e8a75ed5-cbaf-4856-a076-094569635318
    owner-objects  : 35\0
@@ -311,10 +1151,22 @@ begin localizable string
    string-text    : Assigned
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q5
-   timestamp      : 1775584310
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF16
+   timestamp      : 1776412223
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : eb64cb77-59da-4b38-9f95-f1a344c30b9c
+   owner-objects  : 17\767e4d70-f6c2-48a9-97fe-52ca208b5897
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Book Description
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EXM4T3EXM474Q5
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : ebc65b9b-2c43-40ce-aace-6e318e60577b
    owner-objects  : 35\0
@@ -323,10 +1175,70 @@ begin localizable string
    string-text    : Rejected
 end
 begin localizable string
-   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FG
-   timestamp      : 1775584125
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF18
+   timestamp      : 1776412223
    owner          : Demo
-   last-changed   : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : ec87cc04-974b-4866-8e6c-2590ec6dee25
+   owner-objects  : 17\f3603db2-dd38-4246-b83b-7521dfb961c6
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Modified Date
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC479TCC479PG8F
+   timestamp      : 1776412223
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : ececd168-0559-4a3e-8151-3184474577be
+   owner-objects  : 17\79c48ad5-83de-43f4-a839-ba03d0020034
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Create
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF14
+   timestamp      : 1776412223
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : ed327112-30ce-417e-9a4b-c21570128707
+   owner-objects  : 17\03c6ea55-04eb-430c-a7e1-478a21c4f3fd
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Create
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC3GKTCC3GKPDDK
+   timestamp      : 1776412223
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : f70f27e8-4041-430b-8162-9544b93dc888
+   owner-objects  : 35\0
+   object-prop    : 3\60093\0\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : Listening
+end
+begin localizable string
+   name           : LSGADG1AAP0IEATCC4BETCC4BEPF17
+   timestamp      : 1776412223
+   owner          : Demo
+   last-changed   : ARSERVER
+   bundle         : com.example.demo-library
+   stringId       : fa1848fd-fc7a-44c2-82e6-ab64d5e01c8d
+   owner-objects  : 17\c3ce4ec1-f31c-4a23-94ce-127a61c1072e
+   object-prop    : 2\90016\4\1\1\90015\2\4\
+   locale         : default
+   string-text    : ID
+end
+begin localizable string
+   name           : LSGGYOTMJNX9PAT3EX7JT3EX7J74FG
+   timestamp      : 1776506062
+   owner          : Demo
+   last-changed   : ARSERVER
    bundle         : com.example.demo-library
    stringId       : feb7ed03-7bcf-4de8-8cdf-74eb7912b8d3
    owner-objects  : 35\0

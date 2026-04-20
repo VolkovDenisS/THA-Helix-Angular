@@ -1,0 +1,29 @@
+begin named list definition
+   name           : com.example.demo-library:Country
+   definition     : {
+   definition     :   "version" : "1.0.1-SNAPSHOT",
+   definition     :   "lastUpdateTime" : 1776412221981,
+   definition     :   "lastChangedBy" : "ARSERVER",
+   definition     :   "owner" : "ARSERVER",
+   definition     :   "name" : "com.example.demo-library:Country",
+   definition     :   "tags" : null,
+   definition     :   "description" : null,
+   definition     :   "overlayGroupId" : "1",
+   definition     :   "scope" : "BUNDLE",
+   definition     :   "internal" : false,
+   definition     :   "guid" : "IDGADG1AAP0IEATCC4OXTCC4OXPHBH",
+   definition     :   "recordDefinitionName" : "com.example.demo-library:Countries",
+   definition     :   "queryCriteria" : null,
+   definition     :   "qualificationFields" : [ ],
+   definition     :   "qualificationKeywords" : [ ],
+   definition     :   "labelFieldId" : 536870913,
+   definition     :   "valueFieldId" : 536870913,
+   definition     :   "fields" : [ ],
+   definition     :   "shouldSortOnLabel" : true,
+   definition     :   "overlayDescriptor" : {
+   definition     :     "parentOverlayGroupId" : null
+   definition     :   },
+   definition     :   "allowOverlay" : false,
+   definition     :   "searchBehavior" : "CONTAINS"
+   definition     : }
+end

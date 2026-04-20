@@ -1,16 +1,96 @@
 begin container
    name           : com.example.demo-library
    type           : 2
-   num-references : 28
-   timestamp      : 1775584461
+   num-references : 40
+   timestamp      : 1776507859
    owner          : com.example
-   last-changed   : Demo
+   last-changed   : ARSERVER
    export-version : 12
    object-prop    : 5\90019\2\10\90016\4\1\1\90002\4\24\com.example.demo-library\90021\4\24\com.example.demo-library\90015\2\4\
 reference {
    type           : 32839
    datatype       : 1
    value          : 2\2\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\32\com.example.demo-library:Authors\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\34\com.example.demo-library:Countries\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32847
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 14
+   datatype       : 1
+   value          : 4\30\com.example.demo-library:Books\
+}
+reference {
+   type           : 32845
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 12
+   datatype       : 1
+   value          : 4\31\com.example.demo-library:Author\
+}
+reference {
+   type           : 32845
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 12
+   datatype       : 1
+   value          : 4\32\com.example.demo-library:Country\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\35\com.example.demo-library:Books_View\
 }
 reference {
    type           : 32839
@@ -26,6 +106,36 @@ reference {
    type           : 16
    datatype       : 1
    value          : 4\41\com.example.demo-library:BMC Modern Shell\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\37\com.example.demo-library:Authors_View\
+}
+reference {
+   type           : 32839
+   datatype       : 1
+   value          : 2\2\
+}
+reference {
+   type           : 32849
+   datatype       : 1
+   value          : 0\
+}
+reference {
+   type           : 16
+   datatype       : 1
+   value          : 4\39\com.example.demo-library:Countries_View\
 }
 reference {
    type           : 32839
@@ -61,56 +171,6 @@ reference {
    type           : 2
    datatype       : 0
    object         : com.example.demo-library:Publishers
-}
-reference {
-   type           : 32839
-   datatype       : 1
-   value          : 2\2\
-}
-reference {
-   type           : 32847
-   datatype       : 1
-   value          : 0\
-}
-reference {
-   type           : 14
-   datatype       : 1
-   value          : 4\30\com.example.demo-library:Books\
-}
-reference {
-   type           : 32833
-   datatype       : 1
-   value          : 0\
-}
-reference {
-   type           : 32841
-   datatype       : 1
-   value          : 4\4\379;\
-}
-reference {
-   type           : 32842
-   datatype       : 1
-   value          : 2\128\
-}
-reference {
-   type           : 2
-   datatype       : 0
-   object         : com.example.demo-library:Books
-}
-reference {
-   type           : 32839
-   datatype       : 1
-   value          : 2\2\
-}
-reference {
-   type           : 32847
-   datatype       : 1
-   value          : 0\
-}
-reference {
-   type           : 14
-   datatype       : 1
-   value          : 4\32\com.example.demo-library:Authors\
 }
 reference {
    type           : 32839

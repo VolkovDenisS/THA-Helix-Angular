@@ -1,6 +1,0 @@
-#
-#Tue Apr 07 18:09:09 UTC 2026
-IgnoreRuleExecution=false
-DuplicateDataActionType=MERGE
-Name=com.example.demo-library\:Books
-ImportOrder=2
