@@ -1,5 +1,8 @@
 package com.example.demolibrary.domain;
 
+/**
+ * Сущность издателя
+ */
 public class Publisher {
 
     private String id;

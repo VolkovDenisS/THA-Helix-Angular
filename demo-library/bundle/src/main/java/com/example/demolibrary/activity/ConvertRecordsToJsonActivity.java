@@ -23,7 +23,8 @@ public class ConvertRecordsToJsonActivity implements Service {
     /**
      * Принимает на вход идентификатор автора (Display ID), осуществляет обогащение
      * данных по книгам и издателям переданного автора
-     * @param authorId идентификатор автора
+     * @param authorId идентификатор автора, в случае елси идентификатор не указан, будет использован
+     *                 дефолтный 000000000000001
      * @return список книг, включая автора и издателей
      */
     @Action(name = "convertRecordDefinitionsToJson", scope = Scope.PUBLIC)

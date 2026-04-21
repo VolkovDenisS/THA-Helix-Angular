@@ -1,5 +1,8 @@
 package com.example.demolibrary.domain;
 
+/**
+ * Сущность автора
+ */
 public class Author {
 
     private String id;

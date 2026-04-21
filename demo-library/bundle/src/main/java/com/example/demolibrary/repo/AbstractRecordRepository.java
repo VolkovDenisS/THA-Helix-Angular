@@ -99,6 +99,14 @@ public abstract class AbstractRecordRepository<T> {
     }
 
 
+    /**
+     * Вспомогательный метод для построения запроса к record'ам
+     * @param recordDefinitionName имя сущности
+     * @param definition определение сущности
+     * @param fieldFilters фильтры п
+     * @param pageSize размер страницы
+     * @return объект для запроса черезе record service
+     */
     private DataPageQueryParameters buildQueryParameters(String recordDefinitionName,
                                                          RecordDefinition definition,
                                                          Map<Integer, String> fieldFilters,
@@ -120,6 +128,12 @@ public abstract class AbstractRecordRepository<T> {
                 pageSize, PAGE_START, propertySelections, null, predicates);
     }
 
+    /**
+     * Конвертация из сырых данных в мапу поле -> значение
+     * @param row строка данных
+     * @param definition определение рекода
+     * @return карта поле -> значение
+     */
     private Map<String, Object> rowToNamedMap(Object row, RecordDefinition definition) {
         Map<?, ?> rawRow = row instanceof Map ? (Map<?, ?>) row : Collections.emptyMap();
         Map<String, Object> result = new LinkedHashMap<>();
@@ -129,6 +143,12 @@ public abstract class AbstractRecordRepository<T> {
         return result;
     }
 
+    /**
+     * Конвертация значений
+     * @param rawRow "сырая строка"
+     * @param field поле record definition
+     * @return значение поле
+     */
     private Object valueFor(Map<?, ?> rawRow, FieldDefinition<? extends StorageType> field) {
         Object value = rawRow.get(field.getId());
         if (value == null) {

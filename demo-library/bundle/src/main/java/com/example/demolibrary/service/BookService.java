@@ -32,6 +32,12 @@ public class BookService {
         return findTopBooksWithNested(authorDisplayId);
     }
 
+    /**
+     * Метод получения топ авторов с указанным displayId
+     * Данный метод вынесен из метода #getTopTwoByAuthor для возможнсти тестирования
+     * @param authorDisplayId идентификатор в таблице Authors
+     * @return список книг указанного автора, включая информацию о авторе и издателыях книги
+     */
     List<Book> findTopBooksWithNested(String authorDisplayId) {
         List<Book> books = bookRepository.findTopByAuthor(authorDisplayId, TOP_BOOKS_LIMIT);
         Author author = authorRepository.findByDisplayId(authorDisplayId).orElse(null);

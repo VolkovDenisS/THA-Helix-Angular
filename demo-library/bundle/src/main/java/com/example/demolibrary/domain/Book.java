@@ -2,6 +2,9 @@ package com.example.demolibrary.domain;
 
 import java.util.List;
 
+/**
+ * Сущность книги
+ */
 public class Book {
 
     private String id;
