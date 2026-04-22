@@ -7,7 +7,9 @@
 
 package com.example.demolibrary;
 
+import com.bmc.arsys.rx.application.common.ServiceLocator;
 import com.bmc.arsys.rx.services.common.RxBundle;
+import com.example.demolibrary.activity.ConvertRecordsToJsonActivity;
 
 /**
  * Rx Web Activator class.
@@ -19,12 +21,7 @@ public class DemoLibraryApplication extends RxBundle {
      */
     @Override
     protected void register() {
-        //
-        // TODO: Register static web resources and framework extensions.
-        //
-        // registerService(new MyService());
-        //
-
+        registerService(new ConvertRecordsToJsonActivity(ServiceLocator.getRecordService()));
         registerStaticWebResource(String.format("/%s", getId()), "/webapp");
     }
 }

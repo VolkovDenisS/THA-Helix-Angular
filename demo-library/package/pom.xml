@@ -4,12 +4,12 @@
     <parent>
     <artifactId>demo-library-all</artifactId>
     <groupId>com.example</groupId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
 
     <groupId>com.example</groupId>
     <artifactId>demo-library-package</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <dependencies>
