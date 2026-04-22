@@ -3,6 +3,7 @@ package com.example.demolibrary.activity;
 import com.example.demolibrary.domain.Book;
 import com.example.demolibrary.service.BookService;
 
+import com.example.demolibrary.support.InMemoryRecordService;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -12,6 +13,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertSame;
+
 
 
 public class ConvertRecordsToJsonActivityTest {
@@ -24,7 +26,7 @@ public class ConvertRecordsToJsonActivityTest {
     @BeforeMethod
     public void setUp() {
         bookService = new CapturingBookService();
-        activity = new ConvertRecordsToJsonActivity(bookService);
+        activity = new ConvertRecordsToJsonActivity(new InMemoryRecordService());
     }
 
     @Test
@@ -75,7 +77,7 @@ public class ConvertRecordsToJsonActivityTest {
         List<Book> responseToReturn = Collections.emptyList();
 
         CapturingBookService() {
-            super(null, null, null);
+            super(new InMemoryRecordService());
         }
 
         @Override

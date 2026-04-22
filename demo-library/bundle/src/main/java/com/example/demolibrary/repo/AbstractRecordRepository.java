@@ -7,6 +7,7 @@ import com.bmc.arsys.rx.services.record.RecordService;
 import com.bmc.arsys.rx.services.record.domain.FieldDefinition;
 import com.bmc.arsys.rx.services.record.domain.RecordDefinition;
 import com.bmc.arsys.rx.services.record.domain.StorageType;
+import com.example.demolibrary.domain.BusinessEntity;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -21,7 +22,7 @@ import java.util.stream.Collectors;
  *
  * @param <T> сущность в хранилище данных
  */
-public abstract class AbstractRecordRepository<T> {
+public abstract class AbstractRecordRepository<T extends BusinessEntity> {
 
     private static final int PAGE_START = 0;
 

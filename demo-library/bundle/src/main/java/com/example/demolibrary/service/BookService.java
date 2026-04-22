@@ -1,6 +1,7 @@
 package com.example.demolibrary.service;
 
 import com.bmc.arsys.rx.services.common.annotation.RxInstanceTransactional;
+import com.bmc.arsys.rx.services.record.RecordService;
 import com.example.demolibrary.domain.Author;
 import com.example.demolibrary.domain.Book;
 import com.example.demolibrary.domain.Publisher;
@@ -19,12 +20,10 @@ public class BookService {
     private final AuthorRepository authorRepository;
     private final PublisherRepository publisherRepository;
 
-    public BookService(BookRepository bookRepository,
-                       AuthorRepository authorRepository,
-                       PublisherRepository publisherRepository) {
-        this.bookRepository = bookRepository;
-        this.authorRepository = authorRepository;
-        this.publisherRepository = publisherRepository;
+    public BookService(RecordService recordService) {
+        this.bookRepository = new BookRepository(recordService);
+        this.authorRepository = new AuthorRepository(recordService);
+        this.publisherRepository = new PublisherRepository(recordService);
     }
 
     @RxInstanceTransactional(readOnly = true, isolation = Isolation.DEFAULT, rollbackFor = Exception.class)

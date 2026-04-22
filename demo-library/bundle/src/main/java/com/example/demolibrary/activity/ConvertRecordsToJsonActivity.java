@@ -6,6 +6,7 @@ import com.bmc.arsys.rx.services.action.domain.ActionParameter;
 import com.bmc.arsys.rx.services.common.Logger;
 import com.bmc.arsys.rx.services.common.Service;
 import com.bmc.arsys.rx.services.common.domain.Scope;
+import com.bmc.arsys.rx.services.record.RecordService;
 import com.example.demolibrary.domain.Book;
 import com.example.demolibrary.service.BookService;
 
@@ -16,8 +17,8 @@ public class ConvertRecordsToJsonActivity implements Service {
     private static final Logger LOGGER = ServiceLocator.getLogger();
     private final BookService bookService;
 
-    public ConvertRecordsToJsonActivity(BookService bookService) {
-        this.bookService = bookService;
+    public ConvertRecordsToJsonActivity(RecordService recordService) {
+        this.bookService = new BookService(recordService);
     }
 
     /**

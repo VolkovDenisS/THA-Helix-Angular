@@ -3,7 +3,7 @@ package com.example.demolibrary.domain;
 /**
  * Сущность издателя
  */
-public class Publisher {
+public class Publisher implements BusinessEntity {
 
     private String id;
     private String displayId;

@@ -71,10 +71,7 @@ public class BookServiceTest {
                                 BOOK_DESCRIPTION, "Book Description",
                                 BOOK_PRICE, "Book Price")));
 
-        service = new BookService(
-                new BookRepository(recordService),
-                new AuthorRepository(recordService),
-                new PublisherRepository(recordService));
+        service = new BookService(recordService);
     }
 
     @Test

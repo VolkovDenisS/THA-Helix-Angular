@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Сущность книги
  */
-public class Book {
+public class Book implements BusinessEntity {
 
     private String id;
     private String displayId;
